@@ -1,13 +1,29 @@
 {
-  "name": "himanshu-portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
-  "private": true,
-  "type": "module",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "node scripts/build-static.mjs",
-    "dev": "python3 -m http.server 4173",
-    "start": "node scripts/serve-static.mjs"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshu-12345678388/PORTFOLIO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/himanshu-12345678388/PORTFOLIO/issues"
+  },
+  "homepage": "https://github.com/himanshu-12345678388/PORTFOLIO#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.8",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2"
+  }
 }

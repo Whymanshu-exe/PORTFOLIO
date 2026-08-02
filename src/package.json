@@ -1,0 +1,13 @@
+{
+  "name": "himanshu-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static.mjs",
+    "dev": "python3 -m http.server 4173",
+    "start": "node scripts/serve-static.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
