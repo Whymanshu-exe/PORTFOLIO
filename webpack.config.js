@@ -3,7 +3,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 
 export default {
   mode: "development",
-  entry: "./src/script.js", // Matches your script name from the terminal screenshot
+  entry: "./src/script.js",
   output: {
     filename: "main.js",
     path: path.resolve(import.meta.dirname, "dist"),
@@ -11,7 +11,27 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html", // Points to your HTML file in src
+      template: "./src/index.html",
     }),
   ],
+  module: {
+    rules: [
+      // ⬇️ ADD THIS RULE TO PARSE PATHS INSIDE HTML ⬇️
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|pdf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/[name][ext]",
+        },
+      },
+    ],
+  },
 };

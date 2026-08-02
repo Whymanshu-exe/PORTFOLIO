@@ -1,3 +1,6 @@
+import "./style.css"; // Webpack will now look for and bundle this file
+
+
 const nav = document.getElementById('nav');
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
