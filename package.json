@@ -1,29 +1,23 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Himanshu Mishra's Linux-inspired personal portfolio",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/himanshu-12345678388/PORTFOLIO.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/himanshu-12345678388/PORTFOLIO/issues"
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
-  "homepage": "https://github.com/himanshu-12345678388/PORTFOLIO#readme",
   "devDependencies": {
-    "css-loader": "^7.1.4",
-    "html-loader": "^5.1.0",
-    "html-webpack-plugin": "^5.6.8",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.109.2",
-    "webpack-cli": "^7.2.2"
+    "vite": "^6.4.1"
   }
 }
