@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";
 
+const assetUrl = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 const navigation = [
   ["about", "whoami"],
   ["stack", "cat skills"],
@@ -57,32 +59,32 @@ const credentials = [
     name: "SAP Certified — Implementation Consultant",
     detail: "End-to-End Business Processes for SAP Business Suite",
     issuer: "SAP",
-    href: "/SAP/SAP_E2E.pdf",
-    image: "/SAP/sap-certified-implementation-consultant-end-to-end-.png",
+    href: assetUrl("SAP/SAP_E2E.pdf"),
+    image: assetUrl("SAP/sap-certified-implementation-consultant-end-to-end-.png"),
     action: "View certificate",
   },
   {
     name: "SAP Certified — Back-End Developer",
     detail: "ABAP Cloud",
     issuer: "SAP",
-    href: "/SAP/SAPCertification_ABAP.pdf",
-    image: "/SAP/SAP_ABAP.png",
+    href: assetUrl("SAP/SAPCertification_ABAP.pdf"),
+    image: assetUrl("SAP/SAP_ABAP.png"),
     action: "View certificate",
   },
   {
     name: "Google Cloud Computing Foundations",
     detail: "Cloud, infrastructure, and cloud-native fundamentals",
     issuer: "Google Cloud",
-    href: "/certificates/Gcloud2.jpeg",
-    image: "/certificates/Gcloud2.jpeg",
+    href: assetUrl("certificates/Gcloud2.jpeg"),
+    image: assetUrl("certificates/Gcloud2.jpeg"),
     action: "View credential",
   },
   {
     name: "AWS Cloud Practitioner Essentials",
     detail: "Cloud concepts and AWS core services",
     issuer: "Amazon Web Services",
-    href: "/certificates/AWS_ESSENTIALS.pdf",
-    image: "/certificates/AWS_ESSENTIALS_thumbnail.jpg",
+    href: assetUrl("certificates/AWS_ESSENTIALS.pdf"),
+    image: assetUrl("certificates/AWS_ESSENTIALS_thumbnail.jpg"),
     action: "View certificate",
   },
 ];
@@ -168,7 +170,7 @@ function App() {
             <div className="terminal-content">
               <p><span className="prompt">➜</span> neofetch --profile</p>
               <div className="terminal-profile">
-                <img className="terminal-photo" src="/me2.jpg" alt="Himanshu Mishra" />
+                <img className="terminal-photo" src={assetUrl("me2.jpg")} alt="Himanshu Mishra" />
                 <div className="terminal-details">
                   <strong>Himanshu Mishra</strong>
                   <span>-----------------</span>
