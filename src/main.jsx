@@ -159,8 +159,9 @@ function App() {
         </nav>
       </header>
 
-      <main>
-        <section className="hero page-wrap" id="home">
+      <main id="home">
+        <section className="section page-wrap about-section" id="about">
+          <div className="section-label"><span>01</span> whoami</div>
           <div className="terminal-card" aria-label="A terminal-style snapshot of my current interests">
             <div className="terminal-chrome">
               <span className="window-dots"><i /><i /><i /></span>
@@ -185,21 +186,6 @@ function App() {
               <p className="terminal-cursor"><span className="prompt">➜</span> <i /></p>
             </div>
             <div className="terminal-footer"><span>● all systems operational</span><span>UTF-8</span></div>
-          </div>
-        </section>
-
-        <section className="section page-wrap about-section" id="about">
-          <div className="section-label"><span>01</span> whoami</div>
-          <div className="whoami-profile">
-            <h2>Himanshu Mishra</h2>
-            <p className="whoami-role">CS Grad · Linux Nerd · SAP</p>
-            <span className="whoami-community"><i className="status-dot" /> MTS at GFG RBU</span>
-            <p className="whoami-bio">Interested in Linux, RAG, ABAP, system design, and backend engineering.</p>
-            <div className="about-facts">
-              <div><strong>03<span>+</span></strong><small>projects &amp; experiments</small></div>
-              <div><strong>04</strong><small>areas I keep exploring</small></div>
-              <div><strong>∞</strong><small>things left to learn</small></div>
-            </div>
           </div>
         </section>
 
