@@ -60,7 +60,7 @@ const credentials = [
     detail: "End-to-End Business Processes for SAP Business Suite",
     issuer: "SAP",
     href: assetUrl("SAP/SAP_E2E.pdf"),
-    image: assetUrl("SAP/sap-certified-implementation-consultant-end-to-end-.png"),
+    mark: "SAP",
     action: "View certificate",
   },
   {
@@ -68,7 +68,7 @@ const credentials = [
     detail: "ABAP Cloud",
     issuer: "SAP",
     href: assetUrl("SAP/SAPCertification_ABAP.pdf"),
-    image: assetUrl("SAP/SAP_ABAP.png"),
+    mark: "SAP",
     action: "View certificate",
   },
   {
@@ -76,7 +76,7 @@ const credentials = [
     detail: "Cloud, infrastructure, and cloud-native fundamentals",
     issuer: "Google Cloud",
     href: assetUrl("certificates/Gcloud2.jpeg"),
-    image: assetUrl("certificates/Gcloud2.jpeg"),
+    mark: "G",
     action: "View credential",
   },
   {
@@ -84,7 +84,7 @@ const credentials = [
     detail: "Cloud concepts and AWS core services",
     issuer: "Amazon Web Services",
     href: assetUrl("certificates/AWS_ESSENTIALS.pdf"),
-    image: assetUrl("certificates/AWS_ESSENTIALS_thumbnail.jpg"),
+    mark: "AWS",
     action: "View certificate",
   },
 ];
@@ -250,10 +250,8 @@ function App() {
           <div className="credentials-grid">
             {credentials.map((credential) => (
               <a className="credential-card" href={credential.href} target="_blank" rel="noreferrer" key={credential.name}>
-                <div className={`credential-art${credential.mark ? " credential-art-mark" : ""}`}>
-                  {credential.image
-                    ? <img src={credential.image} alt="" loading="lazy" />
-                    : <span className="credential-monogram">{credential.mark ?? <>SAP<span>.</span></>}</span>}
+                <div className="credential-art">
+                  <span className="credential-monogram" data-mark={credential.mark} aria-hidden="true">{credential.mark}</span>
                 </div>
                 <div className="credential-info">
                   <span className="credential-issuer">{credential.issuer}</span>
