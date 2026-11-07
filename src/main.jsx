@@ -171,7 +171,7 @@ function App() {
             <div className="terminal-content">
               <p><span className="prompt">➜</span> neofetch --profile</p>
               <div className="terminal-profile">
-                <img className="terminal-photo" src={assetUrl("me2.jpg")} alt="Himanshu Mishra" />
+                <img className="terminal-photo" src={assetUrl("mee.jpeg")} alt="Himanshu Mishra" />
                 <div className="terminal-details">
                   <strong>Himanshu Mishra</strong>
                   <span>-----------------</span>

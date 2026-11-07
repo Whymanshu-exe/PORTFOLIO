@@ -81,7 +81,7 @@ img { display: block; max-width: 100%; }
 .terminal-content { min-height: 295px; padding: 25px 24px 16px; color: #d1d1d1; font: 10px/1.9 var(--mono); }
 .terminal-content p { margin: 0 0 16px; }
 .terminal-profile { display: flex; align-items: center; gap: 23px; margin: 10px 0 24px; }
-.terminal-photo { width: 116px; height: 116px; flex: 0 0 auto; border: 1px solid #424242; border-radius: 5px; background: #222; object-fit: cover; object-position: center; }
+.terminal-photo { width: 116px; height: 116px; flex: 0 0 auto; border-radius: 8px; object-fit: cover; object-position: center; box-shadow: 0 8px 18px rgba(0, 0, 0, .22); }
 .terminal-details { display: flex; flex-direction: column; color: #aaa; }
 .terminal-details strong { color: var(--terminal-green); font-weight: 500; }
 .terminal-details b { display: inline-block; width: 58px; color: #e2e2e2; font-weight: 400; }
